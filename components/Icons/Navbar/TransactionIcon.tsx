@@ -5,6 +5,11 @@ function TransactionIcon({ title, active }: { title: string; active: string }) {
       viewBox="0 0 18 18"
       width="18"
       xmlns="http://www.w3.org/2000/svg"
+      className={`${
+        active === title.toLowerCase()
+          ? "lg:translate-none -translate-x-[2px]"
+          : ""
+      }`}
     >
       <path
         className={`${

@@ -16,14 +16,14 @@ function SidebarOption({
     <li>
       <Link
         href={`${titleFormated}`}
-        className={`py-4 capitalize flex gap-4 justify-start items-center pl-8 mr-6 relative min-h-14 ${
+        className={` py-4 capitalize flex gap-4 lg:justify-start justify-center items-center lg:pl-8 lg:mr-6 relative min-h-14 ${
           active === titleFormated
-            ? "bg-beige-100 rounded-r-xl border-l-4 border-green text-grey-900 pl-[27px]"
+            ? "bg-beige-100 rounded-r-lg lg:rounded-r-xl border-l-4 border-green text-grey-900 lg:pl-[27px]"
             : "hover:text-grey-100 transition-colors"
         }`}
       >
         {children}
-        <h3>{title}</h3>
+        <h3 className="lg:inline-block hidden">{title}</h3>
       </Link>
     </li>
   );

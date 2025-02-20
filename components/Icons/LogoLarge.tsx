@@ -5,6 +5,7 @@ function LogoLarge() {
       height="22"
       viewBox="0 0 122 22"
       width="122"
+      className="lg:inline-block hidden"
       xmlns="http://www.w3.org/2000/svg"
     >
       <g fill="#fff">
