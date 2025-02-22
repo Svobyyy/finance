@@ -8,7 +8,7 @@ import RecurringBillIcon from "@/components/Icons/Navbar/RecurringBillIcon";
 function SidebarOptions({ active }: { active: string }) {
   console.log(active);
   return (
-    <ul className="flex gap-1 flex-col">
+    <ul className="flex gap-1 md:flex-col flex-row justify-center items-center md:items-stretch">
       <SidebarOption title="Overview" active={active}>
         <OverviewIcon title="Overview" active={active} />
       </SidebarOption>

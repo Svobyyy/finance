@@ -14,7 +14,7 @@ function RecurringBillIcon({
       xmlns="http://www.w3.org/2000/svg"
       className={`${
         active === title.toLowerCase()
-          ? "lg:translate-none -translate-x-[2px]"
+          ? "lg:translate-none md:-translate-x-[2px]"
           : ""
       }`}
     >
