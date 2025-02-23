@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme {
+
   /* Colors */
   --color-beige-500: #98908b;
   --color-beige-100: #f8f4f0;
@@ -23,6 +24,47 @@
   --color-armyGreen: #7f9161;
   --color-gold: #cab361;
   --color-orange: #be6c49;
+
+  /* Typograhpy */
+
+  --text-preset-1: 32px;
+  --text-preset-1--font-weight: bold;
+  --text-preset-1--line-height: 120%;
+  --text-preset-1--letter-spacing: 0px;
+  
+  --text-preset-2: 20px;
+  --text-preset-2--font-weight: bold;
+  --text-preset-2--line-height: 120%;
+  --text-preset-2--letter-spacing: 0px;
+  
+  --text-preset-3: 16px;
+  --text-preset-3--font-weight: bold;
+  --text-preset-3--line-height: 150%;
+  --text-preset-3--letter-spacing: 0px;
+  
+  --text-preset-4: 14px;
+  --text-preset-4--line-height: 150%;
+  --text-preset-4--letter-spacing: 0px;
+  --text-preset-4--font-weight: normal;
+  
+  --text-preset-4-bold: 16px;
+  --text-preset-4-bold--font-weight: bold;
+  --text-preset-4-bold--line-height: 150%;
+  --text-preset-4-bold--letter-spacing: 0px;
+  
+  --text-preset-5: 12px;
+  --text-preset-5--line-height: 150%;
+  --text-preset-5--letter-spacing: 0px;
+  --text-preset-5--font-weight: normal;
+  
+  --text-preset-5-bold: 12px;
+  --text-preset-5-bold--font-weight: bold;
+  --text-preset-5-bold--line-height: 150%;
+  --text-preset-5-bold--letter-spacing: 0px;
+
+  /* Breakpoints */
+
+  --breakpoint-tab: 550px;
 }
 
 @layer base {
@@ -33,6 +75,11 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+
+  body {
+    color: var(--color-grey-900);
+    background: var(--color-beige-100);
+  }
 }
 
 @layer components {
@@ -42,65 +89,4 @@
     padding: var(--spacing-6);
     box-shadow: var(--shadow-xl);
   }
-
-  .text_preset_1,
-  .text_preset_2,
-  .text_preset_3,
-  .text_preset_4,
-  .text_preset_4_bold,
-  .text_preset_5,
-  .text_preset_5_bold {
-    letter-spacing: var(--spacing-0);
-    color: var(--color-grey-900);
-    font-weight: var(--font-normal);
-  }
-
-  .text_preset_1,
-  .text_preset_2 
-  {
-    line-height: 120%;
-  }
-
-  .text_preset_1 {
-    font-size: 32px;
-    font-weight: bold;
-  }
-
-  .text_preset_2 {
-    font-size: 20px;
-    font-weight: bold;
-  }
-
-  .text_preset_3 {
-    font-size: 16px;
-    line-height: 150%;
-    font-weight: bold;
-  }
-
-  .text_preset_4 {
-    font-size: 14px;
-    line-height: 150%;
-  }
-
-  .text_preset_4_bold {
-    font-size: 16px;
-    line-height: 150%;
-    font-weight: bold;
-  }
-
-  .text_preset_5 {
-    font-size: 12px;
-    line-height: 150%;
-  }
-
-  .text_preset_5_bold {
-    font-size: 12px;
-    line-height: 150%;
-    font-weight: bold;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
 }

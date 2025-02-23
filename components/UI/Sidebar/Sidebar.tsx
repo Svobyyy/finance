@@ -7,7 +7,7 @@ import LogoSmall from "@/components/Icons/LogoSmall";
 
 function Sidebar({ active }: { active: string }) {
   return (
-    <header className="lg:max-w-[300px] md:max-w-[88px] w-full md:h-screen text_preset_3">
+    <header className="lg:max-w-[300px] md:max-w-[88px] w-full md:h-screen text-preset-3">
       <nav className="fixed md:top-0 bottom-0 md:bottom-auto lg:max-w-[300px] md:max-w-[88px] w-full bg-grey-900 text-grey-300 md:h-screen md:rounded-r-2xl rounded-t-lg md:rounded-t-none">
         <Link
           href="/overview"
